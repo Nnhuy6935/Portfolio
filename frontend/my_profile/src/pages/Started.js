@@ -12,13 +12,19 @@ import axios from 'axios';
 import Footer from "../components/Footer";
 import React, { useCallback, useRef, useState  } from "react";
 import Reference from "../../public/reference.jpg";
-export default function Started(){
+export default function Started(){  
     // ERROR: KHÔNG TÌM THẤY TỆP TRÊN TRANG 
-    const [fileUrl, setFileUrl] = useState("..\\..\\public\\CV.pdf");
+    const [fileUrl, setFileUrl] = useState("https://drive.google.com/uc?export=download&id=1-mSfrNvgBU35_6bVmATfIDXqYB6h80PD");
     const handleDownload = () => {
+        // const link = document.createElement('a');
+        // link.href = fileUrl;
+        // link.setAttribute('download','my_CV.pdf');
+        // document.body.appendChild(link);
+        // link.click();
+        // link.remove();
         const link = document.createElement('a');
-        link.href = fileUrl;
-        link.setAttribute('download','my_CV.pdf');
+        link.href = 'https://drive.google.com/uc?export=download&id=1-mSfrNvgBU35_6bVmATfIDXqYB6h80PD';
+        link.download = 'my_file.pdf';
         document.body.appendChild(link);
         link.click();
         link.remove();
