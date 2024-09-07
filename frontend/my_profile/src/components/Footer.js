@@ -19,20 +19,20 @@ export default function Footer(){
             <div class="h-[50px]"></div>
             {/* FOR MAIL AND NUMBER */}
             <div class="flex flex-row items-center justify-around mx-[500px] ">
-                <div class="flex flex-row bg-[#38343c] rounded-md p-[10px] w-[250px] items-center">
+                <button class="flex flex-row bg-[#38343c] rounded-md p-[10px] w-[250px] items-center">
                     <MdMailOutline size={28} />
                     <div class="w-[10px]"></div>
                     <div>nnhuy6935@gmail.com</div>
-                </div>
-                <div class="flex flex-row bg-[#38343c] rounded-md p-[10px] w-[250px] items-center">
+                </button>
+                <button class="flex flex-row bg-[#38343c] rounded-md p-[10px] w-[250px] items-center">
                     {/* <Image src={Mail} alt='nnhuy6935@gmail.com' objectFit='contain'/> */}
                     <BsTelephone size={28}/>
                     <div class="w-[10px]"></div>
                     <div>0796728944</div>
-                </div>
+                </button>
             </div>  
             {/* FOR ADDRESS */}
-            <div class="w-full grid justify-items-center mt-[10px]">
+            <button class="w-full grid justify-items-center mt-[10px]">
                 <a href="https://maps.app.goo.gl/YMumKSDvYLs94Snq7">
                     <div class="flex flex-row bg-[#38343c] rounded-md p-[10px] w-[350px] items-center justify-around">
                         <SlLocationPin size={28}/>
@@ -40,7 +40,7 @@ export default function Footer(){
                     </div>
                 </a>
                 
-            </div>
+            </button>
             <div class="h-[50px]"></div>
             <div class="flex flex-row items-center justify-between">
                 <div class="w-2/5 h-1 bg-white "></div>

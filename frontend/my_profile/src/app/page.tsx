@@ -14,11 +14,7 @@ export default function Home() {
 
   return(
     <div>
-      <Header onContactPress={scrollToFooter}></Header>
-      <Started scrollToContact={scrollToFooter}></Started>
-      <footer ref={footerRef} id="footer">
-        <Footer></Footer>
-      </footer>
+      <Started></Started>
     </div>
 
   );

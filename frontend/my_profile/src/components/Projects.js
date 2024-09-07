@@ -25,7 +25,7 @@ export default function Project(){
                 <div class="relative w-1/2">
                     <div class="text-[#9857D3] font-mono text-[16px]">Featured Project</div>
                     <div class="text-[#CCD6F6] font-mono text-[34px]">Photo Gallery</div>
-                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[200px]">10/2023 - 12/2023</div>
+                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[190px]">10/2023 - 12/2023</div>
                     <div class="w-full text-justify rounded-xl bg-gradient-to-r from-[rgba(105,59,147,0.2)] via-[rgba(104,93,114,0.2)] to-[rgb(255,255,255,0.2)] p-[10px] text-[16px]">
                         This is a photo management application with a user-friendly interface, flexible in managing image resources
                         and ensuring the security of personal data. In addition to basic functions such as managing photos and albums, the application also
@@ -67,7 +67,7 @@ export default function Project(){
                 <div class="relative w-1/2">
                     <div class="text-[#9857D3] font-mono text-[16px]">Featured Project</div>
                     <div class="text-[#CCD6F6] font-mono text-[34px]">Novel Reading</div>
-                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[200px]">5/2024 - 6/2024</div>
+                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[190px]">5/2024 - 6/2024</div>
                     <div class="w-full text-justify rounded-xl bg-gradient-to-r from-[rgb(255,255,255,0.2)]   to-[rgba(105,59,147,0.2)] p-[10px] text-[16px]">
                         This is a website allow people to read book online. The website will crawl data from other websites and display
                         the result to user. In this project, we used plug in to update code without debuging. Besides, we don't create and store data. 
@@ -89,7 +89,7 @@ export default function Project(){
                 <div class="relative w-1/2">
                     <div class="text-[#9857D3] font-mono text-[16px]">Featured Project</div>
                     <div class="text-[#CCD6F6] font-mono text-[34px]">Booking Coffee</div>
-                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[200px]">5/2024 - 7/2024</div>
+                    <div class="font-mono mb-[10px] rounded-md bg-indigo-500/100 px-[20px] py-[5px] w-[190px]">5/2024 - 7/2024</div>
                     <div class="w-full text-justify rounded-xl bg-gradient-to-r from-[rgba(105,59,147,0.2)] via-[rgba(104,93,114,0.2)] to-[rgb(255,255,255,0.2)] p-[10px] text-[16px]">
                         This mobile application features a user-friendly and intuitive interface that allows users to easily browse and
                         order beverages from the available menu. Additionally, users can create accounts and manage their order information.
