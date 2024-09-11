@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Mail from '../../public/mail_icon.png';
+import Logo from '../../public/logo.png';
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
@@ -13,10 +14,13 @@ import { motion} from "framer-motion";
 export default function Footer(){
     return( 
         <footer class="bg-[#11071f] text-center py-[20px]" >
+            <div class="font-mono text-[35px] my-[40px] text-[#7127BA]">
+                "Thanks for Scrolling"
+            </div>
             <div class="flex flex-row items-center justify-between">
-                <div class="w-2/5 h-px bg-white "></div>
+                <div class="w-2/5 h-[1px] bg-[#fff3]"></div>
                 <div class="font-mono text-[35px]  bg-[#11071f] ps-[5px] pe-[5px] "> Contact Me </div>
-                <div class="w-2/5 h-px bg-white "></div>
+                <div class="w-2/5 h-[1px] bg-[#fff3]"></div>
             </div>
             <div class="h-[50px]"></div>
             {/* FOR MAIL AND NUMBER */}
@@ -53,7 +57,7 @@ export default function Footer(){
             </motion.button>
             <div class="h-[50px]"></div>
             <div class="flex flex-row items-center justify-between">
-                <div class="w-2/5 h-px bg-white "></div>
+                <div class="w-2/5 h-[1px] bg-[#fff3]"></div>
                 <div class="flex flex-row justify-between">
                     <motion.button
                         whileTap={{scale: 0.9}} 
@@ -82,11 +86,20 @@ export default function Footer(){
                         <a href="https://www.instagram.com/nnnhuy6935/"> <RiInstagramFill size={28}/></a>
                     </motion.button>
                 </div>
-                <div class="w-2/5 h-px bg-white "></div>
+                <div class="w-2/5 h-[1px] bg-[#fff3] "></div>
             </div>
-            <div class="font-mono text-[35px] my-[40px] text-[#7127BA]">
-                "Thanks for Scrolling"
+            
+            {/* PRUDUCT INFORMATION */}
+            <div class="seft-center mt-[20px] mb-[40px]">
+                <div>Proudly built with nnhuy6935</div>
+                <div> @ September, 2024</div>
             </div>
+
+            {/* <div class="flex flex-row justify-between">
+                <div> <Image src={Logo} width={100} height={100}/> </div>
+                
+            </div> */}
+            
         </footer>
     );
 }

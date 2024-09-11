@@ -192,3 +192,6 @@ export default function Project(){
         </div>
     );
 }
+
+
+// ở phần cuối của project có thể chèn thêm một số hình ảnh của project(hiệu ứng lướt ngang để xem thêm)
