@@ -3,6 +3,8 @@ import Image from "next/image";
 import Gallery from "../../public/galleryapp.png";
 import Novel from "../../public/novelapp.png";
 import Coffee from "../../public/coffeeshop.jpg";
+import Background from "../../public/background_project.png";
+import Test from "../../public/test.png";
 import { useState } from "react";
 import { IoMdLink } from "react-icons/io";
 import { motion} from "framer-motion";

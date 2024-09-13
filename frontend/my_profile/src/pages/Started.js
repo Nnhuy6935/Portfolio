@@ -12,6 +12,7 @@ import PersonalIcon from "../../public/personal.png";
 import { IoMdSend } from "react-icons/io";
 import { IoMdCloudDownload } from "react-icons/io";
 import Footer from "../components/Footer";
+import ProjectDetail from "../components/ProjectDetail";
 import React, { useCallback, useRef, useState  } from "react";
 import Reference from "../../public/reference.jpg";
 
@@ -239,11 +240,6 @@ export default function Started(){
                                     effectively visualize and communicate project designs
                                 </div>
                             </motion.div>
-                        {/* <div className={`absolute font-mono text-justify w-4/12 mt-[40px] ${softSkill ? "opacity-100": "opacity-0"} `} >
-                            I am passionate about writing clean, efficient, and compatible code. My expertise includes object-oriented programming (OOP), 
-                            data structures, and algorithms. I am also well-versed in software development processes and utilize various mockup tools to 
-                            effectively visualize and communicate project designs
-                        </div> */}
                         {/* FOR EDUCATION */}
                             <motion.div 
                                 animate = {education ? "visibility" : "invisibility"}
@@ -263,19 +259,7 @@ export default function Started(){
                                     <li>Specializing in IT</li>
                                     <li>GPA: 8.26 / 10</li>
                                 </ul>
-                            </motion.div>
-                        {/* <div className={`absolute font-mono text-justify w-4/12 mt-[40px] ${education ? "opacity-100": "opacity-0"} `} >
-                            <div>
-                                I am currently a fourth year student at the Ho Chi Minh University of Science specializing in IT. 
-                                Throughout my academic journey, I've maintained a GPA of 8.26/10. I'm thrilled at the prospect of 
-                                putting my knowledge to use in diverse real-world applications.
-                            </div>
-                            <ul class="list-disc mt-[20px] ml-[40px]">
-                                <li>A Last-year student at HCM Univerisity of Science</li>
-                                <li>Specializing in IT</li>
-                                <li>GPA: 8.26 / 10</li>
-                            </ul>
-                        </div> */}
+                            </motion.div> 
                         {/* FOR CERTIFICATION */}
                             <motion.div 
                                 animate = {certification ? "visibility" : "invisibility"}
@@ -292,14 +276,6 @@ export default function Started(){
                                     <li>Certification in participating Digital Security Hackathon 2024</li>
                                 </ul>
                             </motion.div>
-                        {/* <div className={`absolute font-mono text-justify w-4/12 mt-[40px] ${certification ? "opacity-100": "opacity-0"} `} >
-                            <div> During my studies, I have achieved a number of accomplishments, as well as obtained the following certifications </div>
-                            <ul class="list-disc mt-[20px] ml-[40px]">
-                                <li>TOIEC 745 Listening - Reading</li>
-                                <li>TOIEC 300 Speaking - Writing</li>
-                                <li>Certification in participating Digital Security Hackathon 2024</li>
-                            </ul>
-                        </div> */}
                     </div>
                 </div>
                 
@@ -337,6 +313,9 @@ export default function Started(){
             <div>
                 <Project></Project>
             </div>
+        </div>
+        <div>
+            <ProjectDetail></ProjectDetail>
         </div>
         <footer ref={footerRef} id="footer">
             <Footer></Footer>
