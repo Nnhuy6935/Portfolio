@@ -20,20 +20,20 @@ import { wrap } from "popmotion";
 const variants = {
     enter: (direction) => {
         return {
-          x: direction > 0 ? 1000 : -1000,
-          opacity: 0
+            x: direction > 0 ? 1000 : -1000,
+            opacity: 0
         };
       },
     center: {
         zIndex: 1,
         x: 0,
-        opacity: 1,
+        opacity: 1
     },
     exit: (direction) => {
         return {
             zIndex: 0,
             x: direction < 0 ? 1000 : -1000,
-            opacity: 0,
+            opacity: 0
         };
     }
 };
@@ -76,22 +76,25 @@ export default function ProjectDetail(){
             <div class="" >
                 <Image src={Background} class="absolute blur-md"/>
                 <div class="flex flex-row w-full justify-between items-center pt-[30px]">
-                    <motion.button whileTap={{scale: 0.9}}  className="prev rounded-full bg-white z-30 w-[50px] h-[50px] ml-[15px] " onClick={() => {paginate(-1)}}> <GrFormPrevious size={30} color="black" class="ml-[7px]"/> </motion.button>
-                    <AnimatePresence initial={false} custom={direction} class="absolute">
+                    <motion.button whileTap={{scale: 0.9}}  className="prev rounded-full bg-white z-30 w-[50px] h-[50px] ml-[15px] " onClick={() => {paginate(1)}}> 
+                        <GrFormPrevious size={30} color="black" class="ml-[7px]"/> 
+                    </motion.button>
+                    <AnimatePresence  initial={true} custom={direction} mode="popLayout"  class="absolute">
                         <motion.img 
                             height={580}
-                            class="h-[480px] rounded-2xl border-2 border-[#fff3]"
+                            class="h-[480px] rounded-2xl border-4 border-[#fff3]"
                             key={page}
                             src={Images[imageIndex]}
                             custom={direction}
                             variants={variants}
-                            initial="center"
+                            initial="enter"
                             animate="center"
                             exit="exit"
                             transition={{
-                                x: {type: "spring", stiffness: 300, damping: 30},
-                                opacity: {duration: 0.2}
+                                x: {type: "spring", stiffness: 200, damping: 15},
+                                opacity: {duration: 1, ease: "easeInOut"}
                             }}
+                            layout
                             drag="x"
                             dragConstraints={{left: 0, right: 0}}
                             dragElastic={1}
@@ -105,7 +108,7 @@ export default function ProjectDetail(){
                             }}
                         />
                     </AnimatePresence>
-                    <motion.button whileTap={{scale: 0.9}}  className="next rounded-full bg-white z-30 w-[50px] h-[50px] mr-[15px] "  onClick={() => {paginate(1)}} > <GrFormNext size={30} color="black" class="ml-[7px]"/> </motion.button>
+                    <motion.button whileTap={{scale: 0.9}}  className="next rounded-full bg-white z-30 w-[50px] h-[50px] mr-[15px] "  onClick={() => {paginate(-1)}} > <GrFormNext size={30} color="black" class="ml-[7px]"/> </motion.button>
                     
 
                 </div>
