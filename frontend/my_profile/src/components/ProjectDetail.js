@@ -60,17 +60,12 @@ const Images = [
     "https://i.imgur.com/4asSCIR.png",
     "https://i.imgur.com/fev5kHz.png",
     "https://i.imgur.com/QMsnyzB.png"
-
-
-
-
-    
 ];
 
 export default function ProjectDetail(){
     const [[page, direction],setPage] = useState([0,0]);
     const imageIndex = wrap(0, Images.length,page);
-    const pagination = (newDirection) => {
+    const paginate = (newDirection) => {
         setPage([page + newDirection, newDirection]);
     }
 
@@ -78,11 +73,10 @@ export default function ProjectDetail(){
     return(
         <div class="bg-[#11071f]">
             <div class="h-[150px]"></div>
-            {/* bg-bg-project h-[622px] blur-md */}
             <div class="" >
                 <Image src={Background} class="absolute blur-md"/>
                 <div class="flex flex-row w-full justify-between items-center pt-[30px]">
-                    <button className="prev rounded-full bg-white z-30 w-[50px] h-[50px] ml-[15px] " onClick={() => {paginate(-1)}}> <GrFormPrevious size={30} color="black" class="ml-[7px]"/> </button>
+                    <motion.button whileTap={{scale: 0.9}}  className="prev rounded-full bg-white z-30 w-[50px] h-[50px] ml-[15px] " onClick={() => {paginate(-1)}}> <GrFormPrevious size={30} color="black" class="ml-[7px]"/> </motion.button>
                     <AnimatePresence initial={false} custom={direction} class="absolute">
                         <motion.img 
                             height={580}
@@ -111,7 +105,7 @@ export default function ProjectDetail(){
                             }}
                         />
                     </AnimatePresence>
-                    <button className="next rounded-full bg-white z-30 w-[50px] h-[50px] mr-[15px] "  onClick={() => {paginate(1)}} > <GrFormNext size={30} color="black" class="ml-[7px]"/> </button>
+                    <motion.button whileTap={{scale: 0.9}}  className="next rounded-full bg-white z-30 w-[50px] h-[50px] mr-[15px] "  onClick={() => {paginate(1)}} > <GrFormNext size={30} color="black" class="ml-[7px]"/> </motion.button>
                     
 
                 </div>
